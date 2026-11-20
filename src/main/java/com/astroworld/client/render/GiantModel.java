@@ -39,7 +39,7 @@ public final class GiantModel {
         ShowPhase ph = ShowState.phase();
         float pr = ph.progress(t);
         float beat = ShowState.beat(pt);
-        float bp = beat * MathHelper.TWO_PI;
+        float bp = beat * ((float) (Math.PI * 2));
         float e = ShowState.energy(pt);
         float pulse = ShowState.pulse(pt);
         switch (ph) {
